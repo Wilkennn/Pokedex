@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    background-color: rgb(40,52,60) ;
+}
+
+#title-pokedex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+#title-img{
+    width: 14rem;
+}
+
+.pokemons-boxes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    margin-top: 5rem;
+}
+
+.pokemon-box{
+    background: white;
+    margin: 2rem;
+    width: 20rem;
+    height: 15rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    box-shadow: 1rem, 1rem
+}
+.pokemon-box img{
+    width: 65%;
+    margin-left: 3.5rem;
+    display:flex;
+    display: -webkit-flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.pokemon-box p {
+    text-align: center;
+    color: black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.id-pokemon{
+    text-align: center;
+    color: black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 800;
+    font-style: italic;
+    margin-top: -14rem;
+    margin-left: -15rem;
+}
+
+
+.pokemon-type{
+    margin-left: 5rem;
+    position: relative;
+    top: 3rem;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 14px;
+    padding: 5px;
+    background-color: blueviolet;
+    border-radius: 1rem;
+    color: white;
+}
+
+#search-pokemon{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10rem;
+    width: 30rem;
+    height: 2rem;
+    padding-left: 1rem;
+    border-radius: 1rem;
+    border: transparent;
+}
+
+input:focus{
+    outline: none;
+}

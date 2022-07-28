@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Pokedex</title>
+</head>
+<body>
+    <header>
+        <section>
+                <div id="title-pokedex">
+                    <img id="title-img" src="https://fontmeme.com/permalink/220613/7bbb60fb4fb7570eb56c7c884bd45176.png" alt="Pokedex">
+                    <input type="text" name="" id="search-pokemon" placeholder="Search Pokemon...">
+                </div>
+        </section>
+    </header>
+    <main>
+        <section>
+            <% console.log(pokemons[0].results) %>
+            <% pokemons[0].results.map(pokemon => { %>
+                <div>
+                    <p><%= pokemon.url %></p>
+                </div>
+            <% }); %>
+        </section>
+    </main>
+</body>
+</html>
